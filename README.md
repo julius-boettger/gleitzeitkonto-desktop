@@ -1,4 +1,5 @@
 # Gleitzeitkonto-Desktop
+
 ## Automatische Berechnung deiner Überstunden <br> als [Electron](https://www.electronjs.org/de/)-App für [Gleitzeitkonto-API](https://github.com/julius-boettger/gleitzeitkonto-api)
 
 Entwickelt zur Verwendung in einem spezifischen Unternehmen, dessen Name aus Datenschutzgründen nicht erwähnt wird.

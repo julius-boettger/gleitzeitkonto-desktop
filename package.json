@@ -1,6 +1,6 @@
 {
   "name": "gleitzeitkonto-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatische Berechnung des Gleitzeitkontos als Desktop-App",
   "author": "Julius Böttger",
   "license": "MIT",

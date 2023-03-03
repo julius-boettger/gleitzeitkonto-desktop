@@ -3,7 +3,7 @@ const DEBUG = false;
 
 const fs = require("fs");
 const path = require("path");
-const { app, BrowserWindow, Menu, ipcMain, Notification } = require("electron");
+const { app, shell, BrowserWindow, Menu, ipcMain, Notification } = require("electron");
 
 // disable hardware acceleration to prevent weird electron warnings on windows 10
 app.disableHardwareAcceleration();
@@ -116,6 +116,13 @@ const createWindow = () => {
         { role: "copy" }, // ctrl+c
         { role: "selectAll" } // ctrl+a
     ]));
+
+    // open links in frontend in default browser (instead of electron browser)
+    win.webContents.setWindowOpenHandler(({ url }) => {
+        shell.openExternal(url);
+        // deny attempt to open electron browser
+        return { action: "deny" };
+    });
 
     // open dev tools
     if (DEBUG) win.webContents.on("dom-ready", event => win.webContents.openDevTools({mode:"detach"}));

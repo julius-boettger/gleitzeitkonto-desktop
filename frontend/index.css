@@ -48,6 +48,8 @@
     bottom: 5px;
     font-size: 25px;
     font-family: "SpecialFont";
+    white-space: break-spaces;
+    text-decoration: none;
 }
 
 #refresh-icon {
