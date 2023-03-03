@@ -1,0 +1,22 @@
+{
+  "name": "gleitzeitkonto-desktop",
+  "version": "1.0.0",
+  "description": "Automatische Berechnung des Gleitzeitkontos als Desktop-App",
+  "author": "Julius Böttger",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "create-release": "electron-forge make"
+  },
+  "dependencies": {
+    "puppeteer": "^19.7.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "@electron/asar": "^3.2.3",
+    "adm-zip": "^0.5.10",
+    "electron": "^23.1.1"
+  }
+}
