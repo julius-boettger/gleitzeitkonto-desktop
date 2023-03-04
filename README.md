@@ -55,5 +55,6 @@ Beim Start des Programms nach der erfolgreichen Installation ist es *möglich*, 
 
 - Das Programm zeigt den aktuellen Stand deines Gleitzeitkontos an
 - Der Stand lässt sich mit einem Klick auf den Aktualisierungsknopf oder mit den Shortcuts Enter, F5 oder Strg+R aktualisieren
+    - Die Aktualisierung kann nur erfolgreich ausgeführt werden, wenn Zugriff auf das interne Fiori möglich ist, du also per Office (W)LAN oder VPN verbunden bist
 - Beim Start wird der zuletzt-geladene Stand angezeigt, der dann einmalig automatisch aktualisiert wird
 - Mit der Config-Datei (unter `%AppData%\gleitzeitkonto-desktop\gleitzeitconfig.json`) lassen sich Werte wie deine Arbeitsstunden in der Woche oder das zu betrachtene Intervall verändern, mehr dazu [hier](https://github.com/julius-boettger/gleitzeitkonto-api#config-datei)
