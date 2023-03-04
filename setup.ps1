@@ -1,5 +1,8 @@
 ### Installs gleitzeitkonto-desktop-...X.X.X.zip when it is in the same directory as this script ###
 
+Write-Host "Starte Installation..." -ForegroundColor Green
+""
+
 # big try-catch because i don't know what will go wrong :)
 try {
 
@@ -45,18 +48,27 @@ if (Test-Path $InstallationFolder) {
     Write-Host "Installations-Ordner erstellt." -ForegroundColor Green
 }
 
+""
+
 # empty installation folder if its not empty
-if (Test-Path (-join($InstallationFolder, "*"))) {
+if (Test-Path "$InstallationFolder*") {
     "Es befinden sich bereits Dateien im Installations-Ordner."
+
+    ""
+
     "Deinstalliere alte Version..."
     Remove-Item "$InstallationFolder*" -Recurse -Force
     Write-Host "Alte Version deinstalliert." -ForegroundColor Green
 }
 
+""
+
 # extract zip file into installation folder
 "Entpacke Programm in Installations-Ordner..."
 Expand-Archive $ZipFileName -DestinationPath $InstallationFolder
 Write-Host "Programm entpackt." -ForegroundColor Green
+
+""
 
 "Erstelle Shortcuts..."
 
@@ -69,8 +81,10 @@ $Shortcut.Save()
 
 # copy shortcut to desktop
 Copy-Item $ShortcutPath -Destination ([Environment]::GetFolderPath("Desktop"))
-
 Write-Host "Shortcuts erstellt." -ForegroundColor Green
+
+""
+
 Write-Host "Installation abgeschlossen." -ForegroundColor Green
 
 } catch {
@@ -82,6 +96,7 @@ $_
 } finally {
 
 # give user time to read
+""
 Pause
 
 }
