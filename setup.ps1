@@ -44,14 +44,14 @@ if (Test-Path $InstallationFolder) {
     "Installations-Ordner existiert bereits."
 } else {
     "Erstelle Installations-Ordner..."
-    New-Item $InstallationFolder -ItemType Directory
+    # make new directory and suppress output
+    [void](New-Item $InstallationFolder -ItemType Directory)
     Write-Host "Installations-Ordner erstellt." -ForegroundColor Green
 }
 
-""
-
 # empty installation folder if its not empty
 if (Test-Path "$InstallationFolder*") {
+    ""
     "Es befinden sich bereits Dateien im Installations-Ordner."
 
     ""
