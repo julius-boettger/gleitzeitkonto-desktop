@@ -6,13 +6,14 @@ Entwickelt zur Verwendung in einem spezifischen Unternehmen, dessen Name aus Dat
 
 Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-API](https://github.com/julius-boettger/gleitzeitkonto-api) erfolgen, **empfehle ich *wärmstens*, die [dortige Dokumentation](https://github.com/julius-boettger/gleitzeitkonto-api#gleitzeitkonto-api---automatische-berechnung-deiner-%C3%BCberstunden-mit-nodejs) zu lesen**.
 
-# Installation (Windows)
+# Installation / Deinstallation (Windows)
 
 - Neuste Version unter [Releases](https://github.com/julius-boettger/gleitzeitkonto-desktop/releases) herunterladen
 - Heruntergeladene ZIP-Datei (in neuen, leeren Ordner) entpacken
 
-### Automatische Installation (empfohlen)
+### Automatisch (empfohlen)
 
+#### Installation
 - `setup.ps1` ausführen (Rechtklick => "Mit PowerShell ausführen")
     - Falls eine rote Fehler-Nachricht kommt:
         - Ausführen von Skripts erlauben:
@@ -28,7 +29,14 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
 - Fertig! Eine Verknüpfung sollte jetzt auf deinem Desktop sein.
     - Falls du das Programm nicht starten kannst: Lese [hier](#antivirus-überprüfung-überspringen) weiter
 
-### Manuelle Installation
+#### Deinstallation
+
+- Win+R drücken
+- `%AppData%\..\Local\Programs\gleitzeitkonto-desktop\` eingeben und Enter drücken
+    - Es öffnet sich ein neues Explorer-Fenster mit dem Programm-Ordner, der eine Datei namens `uninstall.ps1` enthält
+- Den gleichen Schritten wie bei der [Installation](#installation) folgen, nur mit `uninstall.ps1` anstatt `setup.ps1`
+
+### Manuell
 
 Ich gehe davon aus, dass du weißt, was du tust, also hier die Kurzfassung: Wahlweise...
 - `setup.ps1` bearbeiten und nach deinen Ansprüchen konfigurieren

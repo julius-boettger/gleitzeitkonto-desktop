@@ -30,6 +30,8 @@ module.exports = {
     hooks: {
         /** runs before electron-forge make, console.log() doesn't work...? */
         preMake: () => {
+            // copy uninstall script to program folder
+            fs.copyFileSync("./uninstall.ps1", "./out/gleitzeitkonto-desktop-win32-x64/uninstall.ps1");
             // delete outputs of old make-commands
             fs.rmSync("./out/make/", { recursive: true, force: true });
         },
