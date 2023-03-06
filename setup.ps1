@@ -15,8 +15,8 @@ $ZipFileNames = [System.Collections.ArrayList]@(Get-ChildItem "*.zip" | Select-O
 
 # loop through all names of zip files
 for ($i = 0; $i -lt $ZipFileNames.count; $i++) {
-    # if file name does not match regex
-    if (!($ZipFileNames[$i] -match "gleitzeitkonto-desktop-.*\d[.]\d[.]\d[.]zip")) {
+    # if file name does not match regex (bitte-nicht-entpacken-X.X.X.zip)
+    if (!($ZipFileNames[$i] -match "^bitte-nicht-entpacken-(\d[.]){3}zip$")) {
         # remove it
         $ZipFileNames.removeAt($i)
         $i--
@@ -32,7 +32,7 @@ if ($ZipFileNames.count -ne 0) {
 # true if there is no matching zip file
 if ("$ZipFileName" -eq "") {
     Write-Host "Installation fehlgeschlagen." -ForegroundColor Red
-    'Dieses Skript (setup.ps1) muss sich im selben Ordner befinden wie eine ZIP-Datei die etwa "gleitzeitkonto-desktop-win32-x64-1.0.0" heißt.'
+    'Dieses Skript (setup.ps1) muss sich im selben Ordner befinden wie eine ZIP-Datei die etwa "bitte-nicht-entpacken-1.0.0.zip" heißt.'
     "Sie wurde zusammen mit diesem Skript heruntergeladen."
     "Bitte bewege dieses Skript und die genannte ZIP-Datei in einen gemeinsamen Ordner und versuche es erneut."
     # stop process

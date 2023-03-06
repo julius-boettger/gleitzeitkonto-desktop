@@ -48,9 +48,10 @@ module.exports = {
             let zip = new admZip();
             // add installation script
             zip.addLocalFile(installScriptPath);
-            // get zip file name and add it to zip
+            // get zip file name
             const zipFileName = fs.readdirSync(makeDir).filter(file => file.includes(".zip"))[0];
-            zip.addLocalFile(makeDir + zipFileName);
+            // and program zip to setup zip with custom name
+            zip.addLocalFile(makeDir + zipFileName, undefined, `bitte-nicht-entpacken-${packageJSON.version}.zip`);
             // save zip
             zip.writeZip(outputDir + zipFileName.substring(0, zipFileName.length - 4) + "-setup.zip");
             // delete directory
