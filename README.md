@@ -6,6 +6,17 @@ Entwickelt zur Verwendung in einem spezifischen Unternehmen, dessen Name aus Dat
 
 Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-API](https://github.com/julius-boettger/gleitzeitkonto-api) erfolgen, **empfehle ich *wärmstens*, die [dortige Dokumentation](https://github.com/julius-boettger/gleitzeitkonto-api#gleitzeitkonto-api---automatische-berechnung-deiner-%C3%BCberstunden-mit-nodejs) zu lesen**.
 
+# Inhaltsverzeichnis
+
+- [Installation / Deinstallation (Windows)](#installation--deinstallation-windows)
+    - [Automatisch (empfohlen)](#automatisch-empfohlen)
+      - [Installation](#installation)
+      - [Deinstallation](#deinstallation)
+    - [Manuell](#manuell)
+  - [Antivirus-Überprüfung überspringen](#antivirus-überprüfung-überspringen)
+- [Updates](#updates)
+- [Benutzung](#benutzung)
+
 # Installation / Deinstallation (Windows)
 
 - Neuste Version unter [Releases](https://github.com/julius-boettger/gleitzeitkonto-desktop/releases) herunterladen
