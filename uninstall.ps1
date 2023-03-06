@@ -1,4 +1,4 @@
-### Uninstalls Gleitzeitkonto-Desktop ###
+﻿### Uninstalls Gleitzeitkonto-Desktop ###
 
 Write-Host "Starte Deinstallation..." -ForegroundColor Green
 ""

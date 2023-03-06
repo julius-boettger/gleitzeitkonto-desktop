@@ -1,4 +1,4 @@
-### Installs gleitzeitkonto-desktop-...X.X.X.zip when it is in the same directory as this script ###
+﻿### Installs gleitzeitkonto-desktop-...X.X.X.zip when it is in the same directory as this script ###
 
 Write-Host "Starte Installation..." -ForegroundColor Green
 ""
