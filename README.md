@@ -27,7 +27,14 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
 
 #### Installation
 - `setup.ps1` ausführen (Rechtklick => "Mit PowerShell ausführen")
-    - Falls eine rote Fehler-Nachricht kommt:
+    - <details><summary><b>❓ Falls sich das Fenster direkt wieder schließt:</b></summary>
+
+        - Im Explorer-Fenster des Ordners mit `setup.ps1`: `Shift` bzw. `Umschalt` gedrückt halten und Rechtklick auf eine freie Fläche drücken
+        - Im Rechtsklick-Menü "PowerShell-Fenster hier öffnen" auswählen
+        - Im sich öffnenden Fenster `.\setup.ps1` eingeben und Enter drücken
+        </details>
+    - <details><summary><b>❓ Falls eine rote Fehler-Nachricht kommt:</b></summary>
+
         - Ausführen von Skripts erlauben:
             - `Win+R` drücken
             - `powershell` eingeben und Enter drücken
@@ -38,6 +45,7 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
             - Offenes PowerShell-Fenster von vorhin wieder aufrufen
             - `Set-ExecutionPolicy Undefined CurrentUser` eingeben und Enter drücken
             - Das Fenster schließen
+        </details>
 - Fertig! Eine Verknüpfung sollte jetzt auf deinem Desktop sein.
     - Falls du das Programm nicht starten kannst: Lese [hier](#antivirus-überprüfung-überspringen) weiter
 
