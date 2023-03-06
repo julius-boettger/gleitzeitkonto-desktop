@@ -29,7 +29,7 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
 - `setup.ps1` ausführen (Rechtklick => "Mit PowerShell ausführen")
     - Falls eine rote Fehler-Nachricht kommt:
         - Ausführen von Skripts erlauben:
-            - Win+R drücken
+            - `Win+R` drücken
             - `powershell` eingeben und Enter drücken
             - `Set-ExecutionPolicy RemoteSigned CurrentUser` eingeben und Enter drücken
                 - Das Fenster danach offen lassen!
@@ -43,7 +43,7 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
 
 #### Deinstallation
 
-- Win+R drücken
+- `Win+R` drücken
 - `%AppData%\..\Local\Programs\gleitzeitkonto-desktop\` eingeben und Enter drücken
     - Es öffnet sich ein neues Explorer-Fenster mit dem Programm-Ordner, der eine Datei namens `uninstall.ps1` enthält
 - Den gleichen Schritten wie bei der [Installation](#installation) folgen, nur mit `uninstall.ps1` anstatt `setup.ps1`
@@ -66,7 +66,7 @@ Beim Start des Programms nach der erfolgreichen Installation ist es *möglich*, 
 - Unter "Ausschlüsse" (weit unten): "Ausschlüsse hinzufügen oder entfernen"
 - "Ausschluss hinzufügen"
 - "Ordner"
-- Zu %AppData%\\..\\Local\\Programs\\ navigieren
+- Zu `%AppData%\..\Local\Programs\` navigieren
 - Ordner "gleitzeitkonto-desktop" auswählen
 - "Ordner auswählen"
 - Fertig! Der Antivirus ignoriert nun den Installations-Ordner und das Programm kann ausgeführt werden.
