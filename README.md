@@ -59,6 +59,12 @@ Beim Start des Programms nach der erfolgreichen Installation ist es *möglich*, 
 - "Ordner auswählen"
 - Fertig! Der Antivirus ignoriert nun den Installations-Ordner und das Programm kann ausgeführt werden.
 
+# Updates
+
+Momentan sind noch keine automatischen Updates möglich.
+
+Um von einer älteren Version auf eine neuere Version zu updaten musst du einfach nur die gewählte Version installieren (siehe [Installation](#installation--deinstallation-windows)), sie überschreibt dann die vorhandene Version.
+
 # Benutzung
 
 - Das Programm zeigt den aktuellen Stand deines Gleitzeitkontos an
