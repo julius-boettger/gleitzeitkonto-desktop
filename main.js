@@ -3,6 +3,7 @@ const DEBUG = false;
 
 const fs = require("fs");
 const path = require("path");
+const packageJSON = require("./package.json");
 const { app, shell, BrowserWindow, Menu, ipcMain, Notification } = require("electron");
 
 // disable hardware acceleration to prevent weird electron warnings on windows 10
@@ -127,11 +128,19 @@ const createWindow = () => {
     // open dev tools
     if (DEBUG) win.webContents.on("dom-ready", event => win.webContents.openDevTools({mode:"detach"}));
 
-    // refresh data when frontend sends signal for it
+    // react to messages from frontend
     ipcMain.on("message", (event, message) => {
         console.log("message from frontend:", message);
-        if (message === "refresh")
-            refreshData(win);
+        switch (message) {
+            // download and display new data
+            case "refresh":
+                refreshData(win);
+                break;
+            // send notification with current version
+            case "version":
+                new Notification({ title: "Version: v" + packageJSON.version, body: "Deine aktuelle Version von Gleitzeitkonto-Desktop ist v" + packageJSON.version }).show();
+                break;
+        }  
     });
 
     // download new csv file and update frontend again (asynchronous)

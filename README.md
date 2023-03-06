@@ -15,6 +15,7 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
     - [Manuell](#manuell)
   - [Antivirus-Überprüfung überspringen](#antivirus-überprüfung-überspringen)
 - [Updates](#updates)
+  - [Installierte Version herausfinden](#installierte-version-herausfinden)
 - [Benutzung](#benutzung)
 
 # Installation / Deinstallation (Windows)
@@ -76,10 +77,15 @@ Momentan sind noch keine automatischen Updates möglich.
 
 Um von einer älteren Version auf eine neuere Version zu updaten musst du einfach nur die gewählte Version installieren (siehe [Installation](#installation--deinstallation-windows)), sie überschreibt dann die vorhandene Version.
 
+### Installierte Version herausfinden
+
+Seit [Version v1.0.3](https://github.com/julius-boettger/gleitzeitkonto-desktop/releases/tag/v1.0.3) kannst du deine aktuell installierte Version herausfinden, in dem du (während das Programm läuft) `V` drückst. Dann bekommst du eine Benachrichtigung mit dem Namen deiner installierten Version.
+
 # Benutzung
 
 - Das Programm zeigt den aktuellen Stand deines Gleitzeitkontos an
-- Der Stand lässt sich mit einem Klick auf den Aktualisierungsknopf oder mit den Shortcuts Enter, F5 oder Strg+R aktualisieren
+- Der Stand lässt sich mit einem Klick auf den Aktualisierungsknopf oder mit den Shortcuts `Enter`, `F5` oder `Strg+R` aktualisieren
     - Die Aktualisierung kann nur erfolgreich ausgeführt werden, wenn Zugriff auf das interne Fiori möglich ist, du also per Office (W)LAN oder VPN verbunden bist
 - Beim Start wird der zuletzt-geladene Stand angezeigt, der dann einmalig automatisch aktualisiert wird
+- Beim Drücken von `F1` öffnet sich diese Dokumentationsseite hier als Hilfestellung
 - Mit der Config-Datei (unter `%AppData%\gleitzeitkonto-desktop\gleitzeitconfig.json`) lassen sich Werte wie deine Arbeitsstunden in der Woche oder das zu betrachtene Intervall verändern, mehr dazu [hier](https://github.com/julius-boettger/gleitzeitkonto-api#config-datei)

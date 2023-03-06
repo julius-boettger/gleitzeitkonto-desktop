@@ -33,12 +33,18 @@ window.addEventListener("DOMContentLoaded", () => {
     // disable button on startup as backend is already refreshing
     disableButton();
 
-    // send message to backend when button is pressed or when ENTER, F5 or CTRL+R are pressed
+    // send message to backend to refresh when button is pressed
     refreshBtn.addEventListener("click", tryToRefresh);
     window.addEventListener("keydown", event => {
+        // send message to backend to refresh when ENTER or F5 is pressed
         if (event.key == "F5" || event.key == "Enter") tryToRefresh();
+        // send message to backend to notify user about version when V is pressed
+        else if (event.key == "v") ipcRenderer.send("message", "version");
+        // open github documentation when F1 is pressed
+        else if (event.key == "F1") window.open("https://github.com/julius-boettger/gleitzeitkonto-desktop#gleitzeitkonto-desktop", "_blank");;
     });
     window.addEventListener("keypress", event => {
+        // send message to backend to refresh when CTRL+R is pressed
         if (event.key == "\x12" /* CTRL+R */) tryToRefresh();
     });
 
