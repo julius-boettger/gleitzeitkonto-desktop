@@ -47,7 +47,7 @@ Da die zugrunde liegenden Berechnungen der Überstunden durch [Gleitzeitkonto-AP
             - Das Fenster schließen
         </details>
 - Fertig! Eine Verknüpfung sollte jetzt auf deinem Desktop sein.
-    - Falls du das Programm nicht starten kannst: Lese [hier](#antivirus-überprüfung-überspringen) weiter
+    - **❓ Falls du das Programm nicht starten kannst:** Lese [hier](#antivirus-überprüfung-überspringen) weiter
 
 #### Deinstallation
 
